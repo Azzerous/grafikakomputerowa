@@ -1,0 +1,44 @@
+<html>
+
+<body>
+    <?xml version="1.0"?>
+    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800"
+        height="600" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid">
+        <defs>
+            <g id="windmill">
+                <polygon stroke="black" stroke-width="3" fill="none"
+                    points="336.0387547160968,217.35534956470232 308.90083735825255,238.99711648727293 275.0604079256507,231.2732592987212 260,200 275.0604079256507,168.7267407012788 308.9008373582526,161.00288351272707 336.0387547160968,182.64465043529768">
+                    <animateTransform attributeName="transform" type="rotate" from="0 300 200" to="360 300 200" dur="3s"
+                        repeatCount="indefinite" />
+                </polygon>
+
+                <polygon stroke="black" stroke-width="3" fill="none"
+                    points="166.03875471609678,167.35534956470232 138.90083735825257,188.99711648727293 105.06040792565067,181.2732592987212 90,150 105.06040792565065,118.72674070127881 138.9008373582526,111.00288351272707 166.03875471609678,132.64465043529768">
+                    <animateTransform attributeName="transform" type="rotate" from="0 130 150" to="360 130 150" dur="3s"
+                        repeatCount="indefinite" />
+                </polygon>
+
+                <rect x="160" y="106" width="180" height="15" fill="red" transform="rotate(15)" />
+            </g>
+
+            <g id="triangle">
+                <polygon points="210,175 165,320 255,320" />
+            </g>
+
+        </defs>
+
+
+        <use xlink:href="#windmill" transform="translate(30,100)" />
+        <use xlink:href="#triangle" fill="blue" transform="translate(30,100)" />
+
+        <use xlink:href="#windmill" transform="translate(-80,-30) scale(0.7,0.7)" />
+        <use xlink:href="#triangle" fill="purple" transform="translate(-80,-30) scale(0.7,0.7)" />
+
+        <use xlink:href="#windmill" transform="translate(230,-30) scale(0.5,0.5)" />
+        <use xlink:href="#triangle" fill="green" transform="translate(230,-30) scale(0.5,0.5)" />
+
+    </svg>
+</body>
+
+</html>
